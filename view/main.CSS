@@ -31,6 +31,15 @@ header > div {
     font-family: 'Josefin Sans';
 }
 
+.logo > a{
+    text-decoration: none;
+    color: #F2EFE9;
+}
+
+.logo > a:link{
+    color: #F2EFE9;
+}
+
 .logo2 {
     font-weight: 900;
     font-size: 100%;
