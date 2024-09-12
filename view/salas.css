@@ -97,60 +97,41 @@ nav > a:hover {
     border-radius: 0px 0px 20px 20px;
 }
 
-.feira {
-    height: 100%;
-    width: 70%;
-    display: grid;
-    align-items: center;
-    grid-template-rows: 1fr 3fr;
-    grid-template-columns: 100%;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.feira1 {
+.imagem {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 20px 0;
+    width: 60%;
+    height: 50%;
+    background-color: gray;
+}
+
+.texto {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
     flex-direction: column;
 }
 
-.feira1 > p {
-    margin: 0;
-    font-size: 30px;
-    font-weight: lighter;
-    font-family: 'Khand';
-    letter-spacing: 2px;
-    grid-row: 1;
-    grid-column: 1;
+.titulo {
+    font-size: 70px;
+    justify-self: center;
+    align-self: center;
 }
 
-.projetos {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    
+.componentes{
+    font-size: 40px;
+    margin: 0;   
 }
 
-.projeto {
-    width: 80%;
-    height: 80%;
-    margin-bottom: 7%;
-    border: 2px black solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
+.textoreal {
     font-size: 20px;
-}
-
-.projeto:hover {
-    background-color: black;
-    color: white;
-}
-
-.sala {
-    text-align: center;
-    font-size: 15px;
+    margin: 0;
 }
