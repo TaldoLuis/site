@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 5vh 80vh;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    background-color: #4F2C80;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    grid-column: 2.5;
+}
+
+.logo {
+    font-weight: 900;
+    color: #F2EFE9;
+    letter-spacing: 10px;
+    font-family: 'Josefin Sans';
+}
+
+.wario {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.logo > a{
+    text-decoration: none;
+    color: #F2EFE9;
+}
+
+.logo > a:link{
+    color: #F2EFE9;
+}
+
+.logo2 {
+    font-weight: 900;
+    font-size: 100%;
+    color: #F2EFE9;
+    letter-spacing: 10px;
+    font-family: 'Josefin Sans';
+    display: flex;
+    flex-direction: column;
+}
+
+.logo2 > a {
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+}
+
+nav {
+    background-color: #E57C4A;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans';
+    color: #F2EFE9;
+    font-size: 100%;
+    letter-spacing: 4px;
+}
+
+nav > a {
+    margin: 0 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    padding: 0px 0.5%;
+}
+
+main {
+    background-color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.painel {
+    background-color: transparent;   
+    border: 0px;
+    width: 100px;
+    height: 70%;
+}
+
+.painel > i {
+    font-size: 50px;
+    color:#F2EFE9;
+}
+
+.painel > i:hover, .logo2 > a:hover{
+    color: #E57C4A;
+}
+
+nav > a:hover {
+    background-color: #4F2C80;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.feira {
+    height: 100%;
+    width: 70%;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 100%;
+}
+
+.feira1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feira1 > p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Khand';
+    letter-spacing: 2px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.projetos {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    
+}
+
+.projeto {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 7%;
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.projeto:hover {
+    background-color: black;
+    color: white;
+}
+
+.sala {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+}
