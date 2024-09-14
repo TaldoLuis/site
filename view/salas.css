@@ -31,11 +31,13 @@ header > div {
 }
 
 .logo {
-    font-weight: 900;
+    font-weight: bolder;
     color: #F2EFE9;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     font-family: 'Josefin Sans';
+    font-size: 65px;
 }
+
 
 .logo > a{
     text-decoration: none;
