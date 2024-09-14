@@ -85,6 +85,8 @@ nav > a {
     text-decoration: none;
     height: 100%;
     padding: 0px 0.5%;
+    transition: background-color .2s ease-in;
+    border-radius: 0px 0px 20px 20px;
 }
 
 main {
@@ -162,6 +164,7 @@ nav > a:hover {
     text-decoration: none;
     color: black;
     font-size: 20px;
+    padding: 3px;
 }
 
 .projeto:hover {
