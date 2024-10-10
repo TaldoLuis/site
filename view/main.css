@@ -4,6 +4,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 15vh 5vh 80vh;
     width: 100%;
+    font-family: 'Josefin Sans';
 }
 
 h1 {
@@ -177,4 +178,115 @@ nav > a:hover {
     text-align: center;
     font-size: 15px;
     font-family: 'Josefin Sans';
+}
+
+.content{
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin: 0 250px;
+}
+
+.imagem{
+    margin: 20px;
+    min-height: min-content;
+    min-width: min-content;
+}
+
+.conteudo{
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    justify-content: space-around;
+}
+
+.jornalMenu {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: .3fr 1fr;
+    margin: 40px;
+    border: black 1px solid;
+    justify-content: center;
+}
+
+.pastEvents {
+    grid-row: 2;
+    grid-column: span 3;
+    margin: 20px;
+}
+
+.titleEvents{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Josefin Sans';
+    font-weight: bolder;
+}
+
+.contentEvents{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Josefin Sans';
+    margin: 50px;
+    text-wrap: wrap;
+}
+
+.textpoto > h2{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.textpoto > p{
+    text-align: center;
+    margin: 50px;
+    font-size: 15px;
+    text-wrap: wrap;
+    font-family: 'Josefin Sans';
+}
+
+.ConteudoEvents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#not1{
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    margin: 10px;
+    border-right: black 1px solid;
+    min-height: fit-content;
+    min-width: fit-content;
+    text-decoration: none;
+}
+
+#not1 > img{
+    float: left;
+    margin-right: 20px;
+}
+
+#not1 > h1{
+    font-size: 20px;
+    margin: 30px;
+}
+
+.pastEvents > h2{
+    text-align: center;
+}
+
+#not1 > p{
+    margin: 30px;
+
+}
+
+.texto-content{
+    text-align: center;
+    align-content: center;
+    overflow-y: scroll;
+    height: 500px;
+    width: 100%;
+    grid-column: span 2;
 }

@@ -1,0 +1,233 @@
+@media screen and (max-width: 600px) {
+    body {
+        grid-template-rows: 15vh 10vh 100vh;
+        grid-template-columns: 1fr;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 5vh 80vh;  
+    width: 100%;
+    font-family: 'Josefin Sans';
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    background-color: #4F2C80;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    grid-column: 2.5;
+}
+
+.logo {
+    font-weight: bolder;
+    color: #F2EFE9;
+    letter-spacing: 6px;
+    font-family: 'Josefin Sans';
+    font-size: 65px;
+}
+
+.wario {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.logo > a{
+    text-decoration: none;
+    color: #F2EFE9;
+}
+
+.logo > a:link{
+    color: #F2EFE9;
+}
+
+.logo2 {
+    font-weight: 900;
+    font-size: 100%;
+    color: #F2EFE9;
+    letter-spacing: 10px;
+    font-family: 'Josefin Sans';
+    display: flex;
+    flex-direction: column;
+}
+
+.logo2 > a {
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+}
+
+nav {
+    background-color: #E57C4A;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans';
+    color: #F2EFE9;
+    font-size: 100%;
+    letter-spacing: 4px;
+}
+
+nav > a {
+    margin: 0 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    padding: 0px 0.5%;
+    transition: background-color .2s ease-in;
+    border-radius: 0px 0px 20px 20px;
+}
+
+main {
+    background-color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.painel {
+    background-color: transparent;   
+    border: 0px;
+    width: 100px;
+    height: 70%;
+}
+
+.painel > i {
+    font-size: 50px;
+    color:#F2EFE9;
+}
+
+.painel > i:hover, .logo2 > a:hover{
+    color: #E57C4A;
+}
+
+nav > a:hover {
+    background-color: #4F2C80;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+.jornalMenu{
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-rows: 40vh 40vh;
+    margin: 10px;
+}
+
+.textpoto{
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    overflow-y: scroll;
+}
+@media screen and (max-width: 600px) {
+    .jornalMenu{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px){
+    .photo{
+        grid-column: span 3;
+    }
+}
+
+.photo{
+    justify-content: center;
+    margin: 10px;
+}
+
+.photo > img{
+    width: 100%;
+    height: 100%;
+}
+.textpoto > h2{
+    text-align: left;
+    margin: 10px;
+    justify-self: center;
+    text-wrap: wrap;
+    min-width: fit-content;
+    width: min-content;
+}
+
+.textpoto > p{
+    text-wrap: wrap;
+    text-align: left;
+    margin: 10px;
+    word-wrap: break-word;
+    justify-content: center;
+}
+
+.events{
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.titleEvents{
+    margin: 30px;
+    margin-top: 10px;
+}
+
+.contentEvents{
+    min-width: fit-content;
+}
+
+.pastEvents{
+    grid-column: span 3;
+    display: grid;
+    text-align: center;
+    margin: 5px;
+    max-height: fit-content;
+    height: 350px;
+}
+
+.pastEvents > h1{
+    margin: 15px;
+    font-weight: bolder;
+}
+
+.ConteudoEvents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 600px) {
+    .ConteudoEvents{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+h2 {
+    font-size: 40px;
+}
+
