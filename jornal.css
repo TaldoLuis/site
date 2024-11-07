@@ -1,0 +1,326 @@
+@media screen and (max-width: 600px) {
+    body {
+        grid-template-rows: 15vh 10vh 100vh;
+        grid-template-columns: 1fr;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 5vh 80vh;  
+    width: 100%;
+    font-family: 'Josefin Sans';
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    background-color: #4F2C80;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    grid-column: 2.5;
+}
+
+.logo {
+    font-weight: bolder;
+    color: #F2EFE9;
+    letter-spacing: 6px;
+    font-family: 'Josefin Sans';
+    font-size: 65px;
+}
+
+.wario {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.logo > a{
+    text-decoration: none;
+    color: #F2EFE9;
+}
+
+.logo > a:link{
+    color: #F2EFE9;
+}
+
+.logo2 {
+    font-weight: 900;
+    font-size: 100%;
+    color: #F2EFE9;
+    letter-spacing: 10px;
+    font-family: 'Josefin Sans';
+    display: flex;
+    flex-direction: column;
+}
+
+.logo2 > a {
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+}
+
+nav {
+    background-color: #E57C4A;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans';
+    color: #F2EFE9;
+    font-size: 100%;
+    letter-spacing: 1px;
+}
+
+nav > a {
+    margin: 0 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    padding: 0px 0.5%;
+    transition: background-color .2s ease-in;
+    border-radius: 0px 0px 20px 20px;
+}
+
+main {
+    background-color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.painel {
+    background-color: transparent;   
+    border: 0px;
+    width: 100px;
+    height: 70%;
+}
+
+.painel > i {
+    font-size: 50px;
+    color:#F2EFE9;
+}
+
+.painel > i:hover, .logo2 > a:hover{
+    color: #E57C4A;
+}
+
+nav > a:hover {
+    background-color: #4F2C80;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+.jornalMenu{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.textpoto{
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 10px !important;
+    overflow-y: scroll;
+    height: 80%;
+}
+@media screen and (max-width: 600px) {
+    .jornalMenu{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px){
+    .photo{
+        grid-column: span 3;
+    }
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    height: 100%;
+    align-items: center;
+}
+
+.photo > img{
+    width: 100%;
+    height: 740;
+}
+
+.textpoto > h2{
+    text-align: left;
+    justify-self: center;
+    text-wrap: wrap;
+    min-width: fit-content;
+    width: min-content;
+}
+
+.textpoto > p{
+    text-wrap: wrap;
+    text-align: left;
+    margin: 10px;
+    word-wrap: break-word;
+    justify-content: center;
+}
+
+.events{
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin-left: 10px;
+}
+
+.titleEvents {
+    height: 100%;
+    align-content: center;
+}
+
+.contentEvents{
+    min-width: fit-content;
+}
+
+.pastEvents{
+    grid-column: span 3;
+    display: grid;
+    text-align: center;
+    margin: 5px;
+    max-height: fit-content;
+    height: 350px;
+}
+
+.pastEvents > h1{
+    margin: 15px;
+    font-weight: bolder;
+}
+
+.ConteudoEvents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 600px) {
+    .ConteudoEvents{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+h2 {
+    font-size: 40px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}

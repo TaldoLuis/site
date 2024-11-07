@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 5vh 80vh;
+    width: 100%;
+    font-family: 'Josefin Sans';
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    background-color: #4F2C80;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    grid-column: 2.5;
+}
+
+.logo {
+    font-weight: bolder;
+    color: #F2EFE9;
+    letter-spacing: 6px;
+    font-family: 'Josefin Sans';
+    font-size: 65px;
+}
+
+.wario {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.logo > a{
+    text-decoration: none;
+    color: #F2EFE9;
+}
+
+.logo > a:link{
+    color: #F2EFE9;
+}
+
+.logo2 {
+    font-weight: 900;
+    font-size: 100%;
+    color: #F2EFE9;
+    letter-spacing: 10px;
+    font-family: 'Josefin Sans';
+    display: flex;
+    flex-direction: column;
+}
+
+.logo2 > a {
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+}
+
+nav {
+    background-color: #E57C4A;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans';
+    color: #F2EFE9;
+    font-size: 100%;
+    letter-spacing: 4px;
+}
+
+nav > a {
+    margin: 0 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    padding: 0px 0.5%;
+    transition: background-color .2s ease-in;
+    border-radius: 0px 0px 20px 20px;
+}
+
+main {
+    background-color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.painel {
+    background-color: transparent;   
+    border: 0px;
+    width: 100px;
+    height: 70%;
+}
+
+.painel > i {
+    font-size: 50px;
+    color:#F2EFE9;
+}
+
+.painel > i:hover, .logo2 > a:hover{
+    color: #E57C4A;
+}
+
+nav > a:hover {
+    background-color: #4F2C80;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.feira {
+    height: 100%;
+    width: 70%;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 100%;
+}
+
+.feira1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feira1 > p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Khand';
+    letter-spacing: 2px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.projetos {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    
+}
+
+.projeto {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 7%;
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.projeto:hover {
+    background-color: black;
+    color: white;
+}
+
+.sala {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+}
+
+.content{
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin: 0 250px;
+}
+
+.imagem{
+    margin: 20px;
+    min-height: min-content;
+    min-width: min-content;
+}
+
+.conteudo{
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    justify-content: space-around;
+}
+
+.jornalMenu {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: .3fr 1fr;
+    margin: 40px;
+    border: black 1px solid;
+    justify-content: center;
+}
+
+.pastEvents {
+    grid-row: 2;
+    grid-column: span 3;
+    margin: 20px;
+}
+
+.titleEvents{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Josefin Sans';
+    font-weight: bolder;
+}
+
+.contentEvents{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Josefin Sans';
+    margin: 50px;
+    text-wrap: wrap;
+}
+
+.textpoto > h2{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.textpoto > p{
+    text-align: center;
+    margin: 50px;
+    font-size: 15px;
+    text-wrap: wrap;
+    font-family: 'Josefin Sans';
+}
+
+.ConteudoEvents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#not1{
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    margin: 10px;
+    border-right: black 1px solid;
+    min-height: fit-content;
+    min-width: fit-content;
+    text-decoration: none;
+}
+
+#not1 > img{
+    float: left;
+    margin-right: 20px;
+}
+
+#not1 > h1{
+    font-size: 20px;
+    margin: 30px;
+}
+
+.pastEvents > h2{
+    text-align: center;
+}
+
+#not1 > p{
+    margin: 30px;
+
+}
+
+.texto-content{
+    text-align: center;
+    align-content: center;
+    overflow-y: scroll;
+    height: 500px;
+    width: 100%;
+    grid-column: span 2;
+}
+
+.feiraC > img{
+    height: 60vh;
+}
+
+.cursoTextoF {
+    width: 45vw;
+}
+
+.cursoTexto > p {
+    height: 50vh;
+    width: 80vh;
+}
+
+.cursoTexto {
+    font-size: 19px;
+    text-align: justify;
+    grid-column: 3;
+    margin: 0;
+    display: grid;
+}
+
+.feiraC {
+    height: 75%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 45% 60px 500px;
+    margin-top: 10px;
+}
+
